@@ -1,11 +1,14 @@
 import React from 'react';
+import "./Header.css";
 
 const Header = () => {
     const items = ["Home","About","Project","Service","Contact"];
     return (
         <div>
-            <h1>Hello From Header</h1>
-            <ul>
+            <h2>Hello From Header</h2>
+            <p>Here is a list of items</p>
+            <ul className='nav-list'>
+                {/* using loop */}
                 {
                     items.map((item) => {
                         return (
